@@ -1,0 +1,343 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: bot name
+  steps:
+  - intent: bot_name
+  - action: utter_bot_name
+- story: turbo types
+  steps:
+  - intent: turbo_types
+  - action: utter_turbo_types
+- story: turbo Detail
+  steps:
+  - intent: turbo_Detail
+  - action: utter_turbo_Detail
+- story: turbo history
+  steps:
+  - intent: turbo_history
+  - action: utter_turbo_history
+- story: turbo functions
+  steps:
+  - intent: turbo_functions
+  - action: utter_turbo_functions
+- story: turbo application
+  steps:
+  - intent: turbo_application
+  - action: utter_turbo_application
+- story: turbo parts
+  steps:
+  - intent: turbo_parts
+  - action: utter_turbo_parts
+- story: single turbo
+  steps:
+  - intent: single_turbo
+  - action: utter_single_turbo
+- story: twin turbo
+  steps:
+  - intent: twin_turbo
+  - action: utter_twin_turbo
+- story: twin scroll turbo
+  steps:
+  - intent: twin_scroll_turbo
+  - action: utter_twin_scroll_turbo
+- story: Variable Geometry Turbocharger(VGT)
+  steps:
+  - intent: Variable_Geometry_Turbocharger(VGT)
+  - action: utter_Variable_Geometry_Turbocharger(VGT)
+- story: Variable Twin-Scroll Turbocharger
+  steps:
+  - intent: Variable_Twin-Scroll_Turbocharger
+  - action: utter_Variable_Twin-Scroll_Turbocharger
+- story: Electric Turbo
+  steps:
+  - intent: Electric_Turbo
+  - action: utter_Electric_Turbo
+- story: single feature benefits
+  steps:
+  - intent: single_feature_benefits
+  - action: utter_single_feature_benefits
+- story: single limitations
+  steps:
+  - intent: single_limitations
+  - action: utter_single_limitations
+- story: single advantage
+  steps:
+  - intent: single_advantage
+  - action: utter_single_advantage
+- story: single disadvantage
+  steps:
+  - intent: single_disadvantage
+  - action: utter_single_disadvantage
+- story: single details
+  steps:
+  - intent: single_details
+  - action: utter_single_details
+- story: twin feature benefits
+  steps:
+  - intent: twin_feature_benefits
+  - action: utter_twin_feature_benefits
+- story: twin limitations
+  steps:
+  - intent: twin_limitations
+  - action: utter_twin_limitations
+- story: twin advantage
+  steps:
+  - intent: twin_advantage
+  - action: utter_twin_advantage
+- story: twin disadvantages
+  steps:
+  - intent: twin_disadvantages
+  - action: utter_twin_disadvantages
+- story: twin details
+  steps:
+  - intent: twin_details
+  - action: utter_twin_details
+- story: twin scroll turbo features benefits
+  steps:
+  - intent: twin_scroll_turbo_features_benefits
+  - action: utter_twin_scroll_turbo_features_benefits
+- story: twin scroll turbo limitations
+  steps:
+  - intent: twin_scroll_turbo_limitations
+  - action: utter_twin_scroll_turbo_limitations
+- story: twin scroll turbo advantage
+  steps:
+  - intent: twin_scroll_turbo_advantage
+  - action: utter_twin_scroll_turbo_advantage
+- story: twin scroll turbo disadvantage
+  steps:
+  - intent: twin_scroll_turbo_disadvantage
+  - action: utter_twin_scroll_turbo_disadvantage
+- story: twin scroll turbo details
+  steps:
+  - intent: twin_scroll_turbo_details
+  - action: utter_twin_scroll_turbo_details
+- story: Variable Geometry Turbo (VGT) features benefits
+  steps:
+  - intent: Variable_Geometry_Turbo_(VGT)_features_benefits
+  - action: utter_Variable_Geometry_Turbo_(VGT)_features_benefits
+- story: Variable Geometry Turbo (VGT) limitations
+  steps:
+  - intent: Variable_Geometry_Turbo_(VGT)_limitations
+  - action: utter_Variable_Geometry_Turbo_(VGT)_limitations
+- story: Variable Geometry Turbo (VGT) advantages
+  steps:
+  - intent: Variable_Geometry_Turbo_(VGT)_advantages
+  - action: utter_Variable_Geometry_Turbo_(VGT)_advantages
+- story: Variable Geometry Turbo (VGT) disadvantages
+  steps:
+  - intent: Variable_Geometry_Turbo_(VGT)_disadvantages
+  - action: utter_Variable_Geometry_Turbo_(VGT)_disadvantages
+- story: Variable Geometry Turbo (VGT) details
+  steps:
+  - intent: Variable_Geometry_Turbo_(VGT)_details
+  - action: utter_Variable_Geometry_Turbo_(VGT)_details
+- story: Variable Twin Scroll Turbo (VTS) features benefits
+  steps:
+  - intent: Variable_Twin_Scroll_Turbo_(VTS)_features_benefits
+  - action: utter_Variable_Twin_Scroll_Turbo_(VTS)_features_benefits
+- story: Variable Twin Scroll Turbo (VTS) limitations
+  steps:
+  - intent: Variable_Twin_Scroll_Turbo_(VTS)_limitations
+  - action: utter_Variable_Twin_Scroll_Turbo_(VTS)_limitations
+- story: Variable Twin Scroll Turbo (VTS) advantages
+  steps:
+  - intent: Variable_Twin_Scroll_Turbo_(VTS)_advantages
+  - action: utter_Variable_Twin_Scroll_Turbo_(VTS)_advantages
+- story: Variable Twin Scroll Turbo (VTS) disadvantages
+  steps:
+  - intent: Variable_Twin_Scroll_Turbo_(VTS)_disadvantages
+  - action: utter_Variable_Twin_Scroll_Turbo_(VTS)_disadvantages
+- story: Variable Twin Scroll Turbo (VTS) details
+  steps:
+  - intent: Variable_Twin_Scroll_Turbo_(VTS)_details
+  - action: utter_Variable_Twin_Scroll_Turbo_(VTS)_details
+- story: Electric Turbochargers features benefits
+  steps:
+  - intent: Electric_Turbochargers_features_benefits
+  - action: utter_Electric_Turbochargers_features_benefits
+- story: Electric Turbocharger limitations
+  steps:
+  - intent: Electric_Turbocharger_limitations
+  - action: utter_Electric_Turbocharger_limitations
+- story: Electric Turbocharger advantages
+  steps:
+  - intent: Electric_Turbocharger_advantages
+  - action: utter_Electric_Turbocharger_advantages
+- story: Electric Turbocharger disadvantages
+  steps:
+  - intent: Electric_Turbocharger_disadvantages
+  - action: utter_Electric_Turbocharger_disadvantages
+- story: Electric Turbocharger details
+  steps:
+  - intent: Electric_Turbocharger_details
+  - action: utter_Electric_Turbocharger_details
+
+- story: hot side turbo
+  steps:
+  - intent: hot_side_turbo
+  - action: utter_hot_side_turbo
+
+- story: hot side turbo details
+  steps:
+  - intent: hot_side_turbo_details
+  - action: utter_hot_side_turbo_details
+
+- story: turbine wheel
+  steps:
+  - intent: turbine_wheel
+  - action: utter_turbine_wheel
+
+- story: turbine wheel details
+  steps:
+  - intent: turbine_wheel_details
+  - action: utter_turbine_wheel_details
+
+- story: turbine wheel types
+  steps:
+  - intent: turbine_wheel_types
+  - action: utter_turbine_wheel_types
+
+- story: turbine wheel other types
+  steps:
+  - intent: turbine_wheel_other_types
+  - action: utter_turbine_wheel_other_types
+
+- story: turbine wheel features benefits
+  steps:
+  - intent: turbine_wheel_features_benefits
+  - action: utter_turbine_wheel_features_benefits
+
+- story: turbine_wheel_advantages
+  steps:
+  - intent: turbine_wheel_advantages
+  - action: utter_turbine_wheel_advantages
+
+- story: turbine wheel disadvantages
+  steps:
+  - intent: turbine_wheel_disadvantages
+  - action: utter_turbine_wheel_disadvantages
+
+- story: turbo flanges
+  steps:
+  - intent: turbo_flanges
+  - action: utter_turbo_flanges
+
+- story: turbo flanges other
+  steps:
+  - intent: turbo_flanges_other
+  - action: utter_turbo_flanges_other
+
+- story: turbo flanges uses
+  steps:
+  - intent: turbo_flanges_uses
+  - action: utter_turbo_flanges_uses
+
+- story: turbo flange advantages
+  steps:
+  - intent: turbo_flange_advantages
+  - action: utter_turbo_flange_advantages
+
+- story: turbo flange disadvantages
+  steps:
+  - intent: turbo_flange_disadvantages
+  - action: utter_turbo_flange_disadvantages
+
+- story: turbo flange benefits
+  steps:
+  - intent: turbo_flange_benefits
+  - action: utter_turbo_flange_benefits
+
+- story: cold side turbo
+  steps:
+  - intent: cold_side_turbo
+  - action: utter_cold_side_turbo
+
+- story: cold side turbo components
+  steps:
+  - intent: cold_side_turbo_components
+  - action: utter_cold_side_turbo_components
+
+- story: waste gate
+  steps:
+  - intent: waste_gate
+  - action: utter_waste_gate
+
+- story: component waste gate
+  steps:
+  - intent: component_waste_gate
+  - action: utter_component_waste_gate
+
+- story: waste gate types
+  steps:
+  - intent: waste_gate_types
+  - action: utter_waste_gate_types
+
+- story: external waste gate
+  steps:
+  - intent: external_waste_gate
+  - action: utter_external_waste_gate
+
+- story: internal waste gate
+  steps:
+  - intent: internal_waste_gate
+  - action: utter_internal_waste_gate
+
+- story: external waste gate details
+  steps:
+  - intent: external_waste_gate_details
+  - action: utter_external_waste_gate_details
+
+- story: internal waste gate details
+  steps:
+  - intent: internal_waste_gate_details
+  - action: utter_internal_waste_gate_details 
+
+
+- story: images
+  steps:
+  - intent: turbo_image
+  - action: utter_turbo_image
+  - intent: single_turbo_image
+  - action: utter_single_turbo_image
+  - intent: twin_turbo_image
+  - action: utter_twin_turbo_image
+  - intent: twin_scroll_turbo_image
+  - action: utter_twin_scroll_turbo_image
+  - intent: Variable_Geometry_turbo_image
+  - action: utter_variable_geomentry_turbo_image
+  - intent: Variable_twin_scroll_turbo_image
+  - action: utter_variable_twin_turbo_image
+  - intent: electric_turbo_image
+  - action: utter_electric_turbo_image
+
+

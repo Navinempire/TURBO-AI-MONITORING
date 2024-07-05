@@ -1,0 +1,8 @@
+
+train: /content/drive/MyDrive/yolo_training/yolov5/data_images/train
+val: /content/drive/MyDrive/yolo_training/yolov5/data_images/val
+
+nc: 6
+
+names: ["Turbo","Wheel","Internal_wastegate","Ball_bearing","External_wastegate","Journal_bearing"]
+

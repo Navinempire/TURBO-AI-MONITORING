@@ -1,0 +1,500 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: bot_name
+  examples: |
+    - what is your name
+    - which kind of bot you
+- intent: turbo_types
+  examples: |
+    - Give turbo types
+    - Give types of turbo
+- intent: turbo_Detail
+  examples: |
+    - what is turbo
+    - define turbo
+    - Turbo short detail
+- intent: turbo_history
+  examples: |
+    - give turbo history
+    - write a short history of turbo
+- intent: turbo_functions
+  examples: |
+    - give functions of turbocharger
+    - give short functions of turbocharger
+    - give a turbo functions
+- intent: turbo_application
+  examples: |
+    - give a application of turbo
+    - give turbo application
+    - write a application of turbocharger
+- intent: turbo_parts
+  examples: |
+    - give turbo parts and their functions
+    - give a turbocharger major parts and their functions
+- intent: single_turbo
+  examples: |
+    - what is single turbo
+    - give single turbo short explanation
+    - define single turbo
+    - what is single turbo charger
+- intent: twin_turbo
+  examples: |
+    - what is twin turbo
+    - give twin turbo short explanation
+    - define twin turbo
+    - what is twin turbo charger
+- intent: twin_scroll_turbo
+  examples: |
+    - what is twin scroll turbo
+    - give twin scroll turbo short explanation
+    - define twin scroll turbo
+    - what is twin scroll turbocharger
+- intent: Variable_Geometry_Turbocharger(VGT)
+  examples: |
+    - what is Variable Geometry Turbo (VGT)
+    - give Variable Geometry Turbocharger (VGT) short explanation
+    - define Variable Geometry Turbocharger (VGT)
+    - what is Variable Geometry Turbocharger (VGT)
+    - what is VGT
+- intent: Variable_Twin-Scroll_Turbocharger
+  examples: |
+    - what is Variable Twin-Scroll Turbo
+    - give Variable Twin-Scroll Turbocharger short explanation
+    - define Variable Twin-Scroll Turbocharger
+    - what is Variable Twin-Scroll Turbocharge
+- intent: Electric_Turbo
+  examples: |
+    - what is Electric Turbochargers
+    - give Electric Turbo short explanation
+    - define Electric Turbo
+    - what is Electric Turbochargers
+    
+- intent: single_feature_benefits
+  examples: |
+    - give single turbo features
+    - give single turbo benefits
+    - give a single turbo features and benefits
+- intent: single_limitations
+  examples: |
+    - give a single turbo limitations or capacity
+    - give a single turbo limitations
+    - what are the limitations of single turbo 
+- intent: single_advantage
+  examples: |
+    - give single turbo advantages
+    - write a advantages of single turbo
+    - give advantages of single turbochargers
+- intent: single_disadvantage
+  examples: |
+    - give single turbo disadvantages
+    - write a disadvantages of single turbo
+    - give disadvantages of single turbochargers
+- intent: single_details
+  examples: |
+    - give single turbo details
+    - give short details of single turbocharger
+- intent: twin_feature_benefits
+  examples: |
+    - give twin turbo features
+    - give twin turbo benefits
+    - give a twin turbo features and benefits
+- intent: twin_limitations
+  examples: |
+    - give a twin turbo limitations or capacity
+    - give a twin turbo limitations
+    - what are the limitations of twin turbo
+- intent: twin_advantage
+  examples: |
+    - give twin turbo advantages
+    - write a advantages of twin turbo
+    - give advantages of twin turbochargers
+- intent: twin_disadvantages
+  examples: |
+    - give twin turbo disadvantages
+    - write a disadvantages of twin turbo
+    - give disadvantages of twin turbochargers
+- intent: twin_details
+  examples: |
+    - give twin turbo details
+    - give short details of twin turbocharger
+- intent: twin_scroll_turbo_features_benefits
+  examples: |
+    - give twin scroll turbo features
+    - give twin scroll turbo benefits
+    - give a twin scroll turbo features and benefits
+- intent: twin_scroll_turbo_limitations
+  examples: |
+    - give a twin scroll turbo limitations or capacity
+    - give a twin scroll turbo limitations
+    - what are the limitations of twin scroll turbo
+- intent: twin_scroll_turbo_advantage
+  examples: |
+    - give twin scroll turbo advantages
+    - write a advantages of twin scroll turbo
+    - give advantages of twin scroll turbochargers
+- intent: twin_scroll_turbo_disadvantage
+  examples: |
+    - give twin scroll turbo disadvantages
+    - write a disadvantages of twin scroll turbo
+    - give disadvantages of twin scroll turbochargers
+- intent: twin_scroll_turbo_details
+  examples: |
+    - give twin scroll turbo details
+    - give short details of twin scroll turbocharger
+- intent: Variable_Geometry_Turbo_(VGT)_features_benefits
+  examples: |
+    - give Variable Geometry Turbo (VGT)  features
+    - give Variable Geometry Turbo (VGT) benefits
+    - give a Variable Geometry Turbo (VGT) features and benefits
+- intent: Variable_Geometry_Turbo_(VGT)_limitations
+  examples: |
+    - give a  Variable Geometry Turbo (VGT) limitations or capacity
+    - give a Variable Geometry Turbo (VGT) limitations
+    - what are the limitations of Variable Geometry Turbo (VGT)
+- intent:  Variable_Geometry_Turbo_(VGT)_advantages
+  examples: |
+    - give Variable Geometry Turbo (VGT) advantages
+    - write a advantages of Variable Geometry Turbo (VGT)
+    - give advantages of Variable Geometry Turbo (VGT)
+- intent: Variable_Geometry_Turbo_(VGT)_disadvantages
+  examples: |
+    - give Variable Geometry Turbo (VGT) disadvantages
+    - write a disadvantages of Variable Geometry Turbo (VGT)
+    - give disadvantages of Variable Geometry Turbo (VGT)
+- intent: Variable_Geometry_Turbo_(VGT)_details
+  examples: |
+    - give Variable Geometry Turbo (VGT) details
+    - give short details of Variable Geometry Turbo (VGT) 
+- intent: Variable_Twin_Scroll_Turbo_(VTS)_features_benefits
+  examples: |
+    - give Variable Twin Scroll Turbo (VTS) features
+    - give Variable Twin Scroll Turbo (VTS) benefits
+    - give a Variable Twin Scroll Turbo (VTS) features and benefits
+- intent: Variable_Twin_Scroll_Turbo_(VTS)_limitations
+  examples: |
+    - give a  Variable Twin Scroll Turbo (VTS) limitations or capacity
+    - give a Variable Twin Scroll Turbo (VTS) limitations
+    - what are the limitations of Variable Twin Scroll Turbo (VTS)
+- intent: Variable_Twin_Scroll_Turbo_(VTS)_advantages
+  examples: |
+    - give Variable Twin Scroll Turbo (VTS) advantages
+    - write a advantages of Variable Twin Scroll Turbo (VTS)
+    - give advantages of Variable Twin Scroll Turbo (VTS)
+- intent: Variable_Twin_Scroll_Turbo_(VTS)_disadvantages
+  examples: |
+    - give Variable Twin Scroll Turbo (VTS) disadvantages
+    - write a disadvantages of Variable Twin Scroll Turbo (VTS)
+    - give disadvantages of Variable Twin Scroll Turbo (VTS)
+- intent: Variable_Twin_Scroll_Turbo_(VTS)_details
+  examples: |
+    -  give Variable Twin Scroll Turbo (VTS) details
+    -  give short details of Variable Twin Scroll Turbo (VTS)
+- intent: Electric_Turbochargers_features_benefits
+  examples: |
+    - give Electric Turbochargers features
+    - give Electric Turbochargers benefits
+    - give a Electric Turbochargers features and benefits
+- intent: Electric_Turbocharger_limitations
+  examples: |
+    -  give a  Electric Turbocharge limitations or capacity
+    -  give a Electric Turbocharge limitations
+    -  what are the limitations of Electric Turbocharge
+- intent: Electric_Turbocharger_advantages
+  examples: |
+    - give Electric Turbocharger advantages
+    - write a advantages of Electric Turbocharger
+    - give advantages of Electric Turbocharger
+- intent: Electric_Turbocharger_disadvantages
+  examples: |
+    - give Electric Turbocharger disadvantages
+    - write a disadvantages of Electric Turbocharger
+    - give disadvantages of Electric Turbocharger
+- intent: Electric_Turbocharger_details
+  examples: |
+    - give Electric Turbocharger details
+    - give short details of Electric Turbocharger
+
+- intent: hot_side_turbo
+  examples: |
+    - what is hot side turbo
+    - define hot side turbo
+    - give short explanation of hot side turbo
+
+- intent: hot_side_turbo_details
+  examples: |
+    - what are the types of hot side turbo
+    - give some details about hot side turbo
+    - give short details about hot side turbocharger
+
+- intent: turbine_wheel
+  examples: |
+    - what is turbine wheel
+    - define turbine wheel
+    - give short explain of turbine wheel
+
+- intent: turbine_wheel_details
+  examples: |
+    - give turbine wheel details
+    - give some details about the turbine wheel
+
+- intent: turbine_wheel_types
+  examples: |
+    - give types of turbine wheels
+    - write a types of turbine wheels
+    - give turbine wheel types
+
+- intent: turbine_wheel_other_types
+  examples: |
+    - give a other types of turbine wheel
+    - write a turbine wheel other types
+
+- intent: turbine_wheel_features_benefits
+  examples: |
+    - give a turbine wheel features and benefits
+    - write a turbine wheel features and benefits
+    - give features and benefits of turbine wheel
+            
+- intent: turbine_wheel_advantages
+  examples: |
+    - give turbine wheel advantages
+    - give advantages of turbine wheel 
+    - write turbine wheel advantages
+
+- intent: turbine_wheel_disadvantages
+  examples: |
+    - give turbine wheel disadvantages
+    - write a turbine wheeel disadvantages
+    - give turbine wheel disadvantages
+
+- intent: turbo_flanges
+  examples: |
+    - give some common types of turbo flanges
+    - give various types of turbo flanges used in different applications
+    - give turbo flanges with application
+
+- intent: turbo_flanges_other
+  examples: |
+    - give any other types of turbo flanges
+    - give different types of turbo flanges
+
+- intent: turbo_flanges_uses
+  examples: |
+    - give turbo flanges uses
+    - write a uses of turbo flanges
+
+- intent: turbo_flange_advantages
+  examples: |
+    - give turbo flange advantages
+    - write a advantages of turbo flanges 
+    - give some advantages of turbo flanges
+
+- intent: turbo_flange_disadvantages
+  examples: |
+    - give turbo flange disadvantages
+    - write some disadvantages of turbo flange
+    - give a turbo flange disadvantages
+
+- intent: turbo_flange_benefits
+  examples: |
+    - give turbo flange benefits
+    - give some benefits of benefits of turbo flange
+
+- intent: cold_side_turbo
+  examples: |
+    - what is cold side turbo
+    - give short explanation of cold side turbo
+    - define cold side turbo
+
+- intent: cold_side_turbo_components
+  examples: |
+    - give details about the components on the cold side of a turbocharger
+    - give components of the cold side turbo
+  
+- intent: waste_gate
+  examples: |
+    - what is waste gate
+    - define waste gate
+    - give short explanation waste gate
+
+- intent: component_waste_gate
+  examples: |
+    - give components of waste gate
+    - give waste gate components
+    - explain the components of waste gate
+    
+- intent: waste_gate_types
+  examples: |
+    - give types of waste gate types
+    - give waste gate types
+    - write a types of waste gate
+
+- intent: external_waste_gate
+  examples: |
+    - what is external waste gate
+    - give a short explanation of external waste gate
+    - define external waste gate
+
+- intent: internal_waste_gate
+  examples: |
+    - what is internal waste gate
+    - give a short explanation of internal waste gate
+    - define internal waste gate
+
+- intent: external_waste_gate_details
+  examples: |
+    - give external waste gate details
+    - give a details of external waste gate details
+    
+
+- intent: internal_waste_gate_details
+  examples: |
+    -  give internal waste gate details
+    -  give a details of internal waste gate details
+
+
+- intent: turbo_image
+  examples: |
+    - i want turbo image
+    - can you give turbo image
+    - show turbo image
+    - i want to see turbo image
+    - turbo image
+
+- intent: single_turbo_image
+  examples: |
+    - i want sngle turbo image
+    - can you give single turbo image
+    - show single turbo image
+    - i want to see single turbo image
+    - single turbo image
+
+- intent: twin_turbo_image
+  examples: |
+    - i want twin turbo image
+    - can you give twin turbo image
+    - show twin turbo image
+    - i want to see twin turbo image
+    - twin turbo image
+
+- intent: twin_scroll_turbo_image
+  examples: |
+    - i want twin scroll turbo image
+    - can you give twin scroll turbo image
+    - show twin scroll turbo image
+    - i want to see twin scroll turbo image
+    - twin scroll turbo image
+
+- intent: Variable_Geometry_turbo_image
+  examples: |
+    - i want Variable geometry turbo image
+    - can you give Variable geometry turbo image
+    - show Variable geometry turbo image
+    - i want to see Variable geometry turbo image
+    - Variable geometry turbo image
+
+- intent: Variable_twin_scroll_turbo_image
+  examples: |
+    - i want Variable twin scroll turbo image
+    - can you give Variable twin scroll turbo image
+    - show Variabletwin scroll turbo image
+    - i want to see Variable twin scroll turbo image
+    - twin scroll Variable turbo image
+
+- intent: electric_turbo_image
+  examples: |
+    - i want electric turbo image
+    - can you give electric turbo image
+    - show electric turbo image
+    - i want to see electric turbo image
+    - electric turbo image
+
